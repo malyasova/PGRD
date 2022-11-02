@@ -10,6 +10,8 @@ PGRD builds on the insight that the agent's planning algorithm takes a reward as
 The true reward produced by this behavior can be differentiated with respect to the learning reward.
 This way, the optimal learning reward can be found via gradient ascent.
 
+*Experiment*
+
 This repository reproduces the first experiment from the paper. The aim of the experiment is to demonstrate that PGRD can improve the reward and accelerate learning.
 It is set in the foraging environment.
 "The foraging environment is a 3×3 grid world with 3 dead-end corridors (rows) separated by impassable walls. The agent (bird) has
@@ -23,5 +25,6 @@ Objective Reward for the Foraging Domain: The designer’s goal is to maximize t
 of worms eaten per time step. Thus, the objective reward function RO provides a reward of 1.0 when
 the agent eats a worm, and a reward of 0 otherwise."
 
-Run run_experiments.py to run the experiments.
-Visualization of the results is in visualize_results.ipynb
+Run `run_experiments.py` to run the experiments.
+
+Visualization of the results is in `visualize_results.ipynb`
