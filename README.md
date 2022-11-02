@@ -1,5 +1,7 @@
 Implementation of the first experiment from the [Reward Design via Online Gradient Ascent](https://proceedings.neurips.cc/paper/2010/file/168908dd3227b8358eababa07fcaf091-Paper.pdf) paper.
 
+**Algorithm**
+
 The paper considers the scenario of an agent designer training an autonomous agent using Reinforcement Learning. 
 The designer could use his own reward function to train the agent. However, a modified reward can accelerate learning and improve performance of a bounded agent.
 The paper sets out to find the optimal reward function via gradient ascent for a family of bounded agents that behave 
@@ -8,9 +10,9 @@ can improve reward functions in agents with computational  limitations necessita
 
 PGRD builds on the insight that the agent's planning algorithm takes a reward as input and outputs behavior.
 The true reward produced by this behavior can be differentiated with respect to the learning reward.
-This way, the optimal learning reward can be found via gradient ascent.
+This way, the optimal learning reward can be found via gradient ascent. See the paper for details.
 
-*Experiment*
+**Experiment**
 
 This repository reproduces the first experiment from the paper. The aim of the experiment is to demonstrate that PGRD can improve the reward and accelerate learning.
 It is set in the foraging environment.
@@ -24,6 +26,8 @@ the worm, a new worm appears randomly in one of the other two potential worm loc
 Objective Reward for the Foraging Domain: The designer’s goal is to maximize the average number
 of worms eaten per time step. Thus, the objective reward function RO provides a reward of 1.0 when
 the agent eats a worm, and a reward of 0 otherwise."
+
+**Running**
 
 Run `run_experiments.py` to run the experiments.
 
